@@ -3,17 +3,20 @@
 // нулями и единицами в случайном порядке.
 // [1,0,1,1,0,1,0,0]
 
-int[] array = new int[8];
+Console.WriteLine("Введите N: ");
+int num = int.Parse(Console.ReadLine());
 
-void FillArray(int[] collection)
+int[] FillArray(int num)
 {
-    int length = collection.Length;
+    int[] array = new int[num];
+    int length = array.Length;
     int index = 0;
     while (index < length)
     {
-        collection[index] = new Random().Next(0, 2);
+        array[index] = new Random().Next(0, 2);
         index++;
     }
+    return array;
 }
 
 void PrintArray(int[] col)
@@ -29,5 +32,15 @@ void PrintArray(int[] col)
     Console.Write("]");
 }
 
-FillArray(array);
-PrintArray(array);
+int[] arr = FillArray(num);
+PrintArray(arr);
+
+// int[] array = new int[8];
+// Random rand = new Random();
+// Console.Write("[");
+// for (int i = 0; i < 8; i++)
+// {
+//     array[i] = rand.Next(0, 2);
+//     Console.Write(array[i] + ",");
+// }
+// Console.Write("]");
