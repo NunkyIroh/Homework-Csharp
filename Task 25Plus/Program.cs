@@ -43,3 +43,5 @@ void PrintDegree(double Exp)
 
 double res = IntDegree(A, B);
 PrintDegree(res);
+
+// end
