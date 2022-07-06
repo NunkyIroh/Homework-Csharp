@@ -28,5 +28,3 @@ void PrintDegree (int Exp)
 
 int res = NatDegree(A, B);
 PrintDegree(res);
-
-// end
