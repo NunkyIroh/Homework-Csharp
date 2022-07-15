@@ -82,6 +82,5 @@ void PrintArray(double[] array)
 int[,] arrayResult = CreateMatrixRndInt(m, n, min, max);
 PrintMatrix(arrayResult);
 Console.WriteLine();
-MatrixSumColumnlNumbers(arrayResult);
 double[] sumArrCol = MatrixSumColumnlNumbers(arrayResult);
 PrintArray(sumArrCol);
