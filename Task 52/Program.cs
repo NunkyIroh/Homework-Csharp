@@ -6,23 +6,6 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-// for (int i = 0; i < N; i++)
-// {
-//     for (int j = 0; j < M; j++)
-//     {
-//         Console.Write(matrix[i, j]); //вывод матрицы
-//         summ[i] += matrix[j, i];      //подсчет суммы колонки
-//     } 
-//     Console.WriteLine();
-// }
-
-// Console.WriteLine();
-
-// foreach (double elem in summ)
-// {
-//     Console.WriteLine(elem/M); //вывод среднего для колонки
-// }
-
 Console.Clear();
 
 Console.WriteLine("Чтобы создать массив следуйте инструкциям!");
