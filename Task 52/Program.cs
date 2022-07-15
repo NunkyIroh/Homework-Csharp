@@ -54,8 +54,6 @@ double[] MatrixSumColumnlNumbers(int[,] inArray)
     return result;
 }
 
-
-
 void PrintMatrix(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
