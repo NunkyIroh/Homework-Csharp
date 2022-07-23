@@ -14,8 +14,8 @@ int num2 = int.Parse(Console.ReadLine());
 int SumAllNaturalNumberMN(int number1, int number2)
 {
     if (number1 == number2) return number1;
-    else if (number1 < number2) return number1 + NaturalNumber(number1 + 1, number2);
-    else return number1 + NaturalNumber(number1 - 1, number2);
+    else if (number1 < number2) return number1 + SumAllNaturalNumberMN(number1 + 1, number2);
+    else return number1 + SumAllNaturalNumberMN(number1 - 1, number2);
 }
 
 void PrintSumNum(int result)
